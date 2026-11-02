@@ -19,57 +19,129 @@
     </header>
 
     <main>
-        <!-- Course Information Section -->
+        <!-- Course Header Section -->
         <section>
             <h1>Web Development Masterclass</h1>
             <p>Learn how to build responsive, modern websites using pure HTML from scratch.</p>
-            <p><strong>Instructor:</strong> Dr. Alex Morgan &nbsp;|&nbsp; <strong>Level:</strong> Beginner</p>
+            
+            <!-- Metadata Breakdown -->
+            <p>
+                <strong>Instructor:</strong> Dr. Alex Morgan &nbsp;|&nbsp; 
+                <strong>Level:</strong> Beginner &nbsp;|&nbsp; 
+                <strong>Duration:</strong> 6 Weeks &nbsp;|&nbsp;
+                <strong>Rating:</strong> &#9733;&#9733;&#9733;&#9733;&#9734; (4.8/5)
+            </p>
+
+            <!-- Course Overview Progress -->
+            <label for="course-progress">Overall Course Completion:</label>
+            <progress id="course-progress" value="35" max="100">35%</progress> <span>35% Completed</span>
         </section>
 
         <hr>
 
-        <!-- HTML5 Video Player Placeholder Requirement -->
+        <!-- Current Video & Audio Lesson Player Section -->
         <section>
             <h2>Current Lesson Player</h2>
-            <video width="640" height="360" controls>
+            <p><strong>Now Playing:</strong> Module 1 - Introduction to Web Structure</p>
+            
+            <!-- Video Player -->
+            <video width="640" height="360" controls poster="lesson-thumbnail.jpg">
                 <source src="sample-lesson.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <p><strong>Now Playing:</strong> Module 1 - Introduction to Web Structure</p>
+
+            <br><br>
+
+            <!-- Audio Version / Lecture Podcast -->
+            <article>
+                <h3>Audio Version (Listen on the go)</h3>
+                <audio controls>
+                    <source src="sample-lesson.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
         </section>
 
         <hr>
 
-        <!-- Syllabus Section Requirement: Nested Ordered (<ol>) and Unordered (<ul>) Lists -->
+        <!-- Interactive Syllabus Section -->
         <section>
-            <h2>Course Syllabus</h2>
+            <h2>Course Syllabus & Modules</h2>
+            <p><em>Click on a module below to view or hide the lesson breakdown.</em></p>
+
             <ol>
                 <li>
-                    <strong>Module 1: Getting Started with HTML</strong>
-                    <ul>
-                        <li>Lesson 1.1: Understanding the Web and Browsers</li>
-                        <li>Lesson 1.2: Basic HTML Document Boilerplate</li>
-                        <li>Lesson 1.3: Headings, Paragraphs, and Text Formatting</li>
-                    </ul>
+                    <!-- Collapsible Module 1 -->
+                    <details open>
+                        <summary><strong>Module 1: Getting Started with HTML</strong></summary>
+                        <ul>
+                            <li>Lesson 1.1: Understanding the Web and Browsers</li>
+                            <li>Lesson 1.2: Basic HTML Document Boilerplate</li>
+                            <li>Lesson 1.3: Headings, Paragraphs, and Text Formatting</li>
+                        </ul>
+                    </details>
                 </li>
+                <br>
                 <li>
-                    <strong>Module 2: Working with Links and Media</strong>
-                    <ul>
-                        <li>Lesson 2.1: Hyperlinks and Absolute vs. Relative Paths</li>
-                        <li>Lesson 2.2: Inserting Images and Figures</li>
-                        <li>Lesson 2.3: Integrating Video Content</li>
-                    </ul>
+                    <!-- Collapsible Module 2 -->
+                    <details open>
+                        <summary><strong>Module 2: Working with Links and Media</strong></summary>
+                        <ul>
+                            <li>Lesson 2.1: Hyperlinks and Absolute vs. Relative Paths</li>
+                            <li>Lesson 2.2: Inserting Images and Figures</li>
+                            <li>Lesson 2.3: Integrating Video and Audio Content</li>
+                        </ul>
+                    </details>
                 </li>
+                <br>
                 <li>
-                    <strong>Module 3: Semantic Layouts and Tables</strong>
-                    <ul>
-                        <li>Lesson 3.1: Semantic Tags (header, nav, main, footer)</li>
-                        <li>Lesson 3.2: Structuring Data with HTML Tables</li>
-                    </ul>
+                    <!-- Collapsible Module 3 -->
+                    <details>
+                        <summary><strong>Module 3: Semantic Layouts and Forms</strong></summary>
+                        <ul>
+                            <li>Lesson 3.1: Semantic Tags (header, nav, main, footer)</li>
+                            <li>Lesson 3.2: Structuring Data with HTML Tables</li>
+                            <li>Lesson 3.3: Creating User Forms and Inputs</li>
+                        </ul>
+                    </details>
                 </li>
             </ol>
         </section>
+
+        <hr>
+
+        <!-- Downloadable Lesson Resources Section -->
+        <section>
+            <h2>Lesson Resources & Downloads</h2>
+            <ul>
+                <li><a href="resources/html-cheatsheet.pdf" download>HTML Tag Reference Guide (PDF)</a></li>
+                <li><a href="resources/starter-code.zip" download>Module 1 Starter Code Exercises (.zip)</a></li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- Lesson Discussion / Note Section -->
+        <section>
+            <h2>Lesson Notes & Student Feedback</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Submit a Question or Note</legend>
+                    <p>
+                        <label for="student-name">Your Name:</label><br>
+                        <input type="text" id="student-name" name="student_name" placeholder="Enter your name" required>
+                    </p>
+                    <p>
+                        <label for="lesson-note">Questions / Thoughts on this lesson:</label><br>
+                        <textarea id="lesson-note" name="lesson_note" rows="4" cols="50" placeholder="Type your comment or question here..."></textarea>
+                    </p>
+                    <button type="submit">Post Comment</button>
+                </fieldset>
+            </form>
+        </section>
     </main>
+
+    <hr>
 
     <!-- Footer -->
     <footer>
