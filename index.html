@@ -1,42 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Course System</title>
+    <meta name="description" content="Discover online courses and learn new skills at your own pace." />
+    <title>OnlineLearn - Online Course System</title>
   </head>
   <body>
+
+    <!-- Header & Navigation -->
     <header>
       <div class="logo">
-        <a href="index.html">OnlineLearn</a>
+        <a href="index.html"><strong>OnlineLearn</strong></a>
       </div>
-      <nav aria-label="Main navigation">
-        <a href="index.html">Home</a> | 
-            <a href="login.html">Login</a> | 
-            <a href="signup.html">Sign Up</a> | 
-            <a href="dashboard.html">Dashboard</a> | 
-            <a href="courses.html" aria-current="page">Courses</a> |
-            <a href="resources.html">Resources</a> |
-            <a href="checkout.html">Checkout</a> |
-        <a href="#about">About</a> |
-        <a href="#contact">Contact</a>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
       <div class="header-actions">
-        <a href="login.html">Login</a>
+        <a href="login.html">Log In</a> | 
+        <a href="signup.html">Sign Up</a>
       </div>
     </header>
+
+    <hr />
+
+    <!-- Main Content Area -->
     <main>
+
+      <!-- Hero Section -->
       <section class="hero">
         <h1>Build Your Future Through Learning</h1>
         <p>
-          Discover new skills, explore online courses, and learn at your own
-          pace from anywhere.
+          Discover new skills, explore online courses, and learn at your own pace from anywhere.
         </p>
-        <div class="hero-actions">
-          <a href="course-detail.html"> Explore Courses</a><br />
-          <a href="signup.html">Get Started </a>
+        <div>
+          <a href="courses.html">Explore Courses</a> | 
+          <a href="signup.html">Get Started</a>
         </div>
       </section>
+
+      <hr />
+
+      <!-- Search & Filter Form -->
+      <section class="search-section">
+        <h2>Find a Course</h2>
+        <form action="courses.html" method="GET">
+          <label for="search-input">Search:</label>
+          <input type="text" id="search-input" name="q" placeholder="e.g. Web Development" />
+          
+          <label for="category-select">Category:</label>
+          <select id="category-select" name="category">
+            <option value="all">All Categories</option>
+            <option value="development">Development</option>
+            <option value="design">Design</option>
+            <option value="business">Business</option>
+            <option value="data">Data Science</option>
+          </select>
+          
+          <button type="submit">Search</button>
+        </form>
+      </section>
+
+      <hr />
+
+      <!-- About Section -->
+      <section id="about">
+        <h2>About OnlineLearn</h2>
+        <p>
+          OnlineLearn provides flexible, low-cost learning opportunities for people worldwide. 
+          Gain practical skills taught by industry leaders and earn recognized certificates.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+          <p>
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" required />
+          </p>
+          <p>
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" required />
+          </p>
+          <p>
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </p>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
     </main>
+
+    <hr />
+
+    <!-- Footer -->
+    <footer>
+      <section>
+        <h3>OnlineLearn</h3>
+        <p>Empowering learners worldwide through quality education.</p>
+      </section>
+      
+      <nav aria-label="Footer Navigation">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="courses.html">All Courses</a></li>
+          <li><a href="dashboard.html">Student Dashboard</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+        </ul>
+      </nav>
+
+      <p>&copy; 2026 OnlineLearn. All rights reserved.</p>
+    </footer>
+
   </body>
 </html>
