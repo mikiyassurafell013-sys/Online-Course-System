@@ -7,4 +7,4 @@ No Name ID no section
 3 Luliya Alem ETS 0925/17 c
 4 Nardos Tekalign ETS 1116/17 c
 5 Moti Umeta ETS 1054/17 c
-6 Mesud mustefa EtS 0993/17 c
+6 Mesud mustefa EtS 0993/17 c......... mesudmustefa5-pixel
