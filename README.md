@@ -1,25 +1,12 @@
-# Online Course System
+# Online-Course-System
+An interactive and clean online learning platform that allows students to enroll in courses, access lecture materials, and track academic progress.
+## Group Members
 
-A collection of HTML pages for an online learning platform.
-
-## Pages currently included
-
-- `index.html` — Home page with links to the course and account pages.
-- `courses.html` — Course catalog with search and category/level filter controls, plus six course cards. The controls are currently static.
-- `course-detail.html` — Course overview, lesson media elements, syllabus, resource links, and a notes form.
-- `dashboard.html` — Sample learner profile, enrolled courses, and progress information.
-- `login.html` — Login form.
-- `signup.html` — Account creation form.
-
-## Planned future modifications
-
-- Add CSS to improve page layout, visual design, and responsive behavior.
-- Add JavaScript to make the course search and filter controls work and to support other interactive page features.
-
-## Group Members and respective Github usernames
-1. Luliya Alem        luliyaalem25-cloud
-2. Mahider Feleke     mahider-f
-3. Mesud Mustefa
-4. Mikiyas Surafel    mikiyassurafell013-sys
-5. Moti Umeta         Motiumeta
-6. Nardos Takalign    nardostekalign
+| No. | Name | ID No. | Section | GitHub Username |
+|-----|------|--------|---------|-----------------|
+| 1 | Mahider Feleke | ETS 0928/17 | C | [mahder-f](https://github.com/mahder-f) |
+| 2 | Mikiyas Surafeall | ETS 1024/17 | C | [mikiyassurafell013-sys](https://github.com/mikiyassurafell013-sys) |
+| 3 | Luliya Alem | ETS 0925/17 | C | [luliyaalem25-cloud](https://github.com/luliyaalem25-cloud) |
+| 4 | Nardos Tekalign | ETS 1116/17 | C | [nardostekaling](https://github.com/nardostekaling) |
+| 5 | Moti Umeta | ETS 1054/17 | C | [Motiumeta](https://github.com/Motiumeta) |
+| 6 | Mesud Mustefa | ETS 0993/17 | C | [mesudmustefa5-pixel](https://github.com/mesudmustefa5-pixel) |

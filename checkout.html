@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout & Enrollment - Interactive Online Learning</title>
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Online Learning Platform</h1>
+        <!-- Local Site Navigation -->
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="login.html">Login</a> |
+            <a href="signup.html">Sign Up</a> |
+            <a href="dashboard.html">Dashboard</a> |
+            <a href="course-detail.html">Course Details</a> |
+            <a href="resources.html">Resources</a> |
+            <a href="checkout.html">Checkout</a>
+        </nav>
+        <hr>
+        <h2>Checkout & Enrollment</h2>
+    </header>
+
+    <main>
+        <!-- 1. Order Summary Table -->
+        <section>
+            <h3>1. Order Summary</h3>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Course Title</th>
+                        <th>Instructor</th>
+                        <th>Duration</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Development Fundamentals</td>
+                        <td>Dr. Alex Johnson</td>
+                        <td>6 Weeks</td>
+                        <td>$49.99</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Python Programming</td>
+                        <td>Sarah Jenkins</td>
+                        <td>8 Weeks</td>
+                        <td>$69.99</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" align="right"><strong>Total Amount:</strong></td>
+                        <td><strong>$119.98</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <br><hr><br>
+
+        <!-- Enrollment & Checkout Form -->
+        <form action="#" method="post">
+            
+            <!-- 2. Billing Address Form Fields -->
+            <fieldset>
+                <legend><strong>2. Billing Address</strong></legend>
+                <br>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+                <br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                <br><br>
+
+                <label for="street">Street Address:</label><br>
+                <input type="text" id="street" name="street" placeholder="123 Main Street" required>
+                <br><br>
+
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city" placeholder="Addis Ababa" required>
+                <br><br>
+
+                <label for="country">Country:</label><br>
+                <input type="text" id="country" name="country" placeholder="Ethiopia" required>
+                <br><br>
+
+                <label for="zipcode">Postal / Zip Code:</label><br>
+                <input type="text" id="zipcode" name="zipcode" placeholder="1000" required>
+                <br><br>
+            </fieldset>
+
+            <br>
+
+            <!-- 3. Payment Option Selections -->
+            <fieldset>
+                <legend><strong>3. Payment Method</strong></legend>
+                <br>
+                <p>Select your preferred payment option:</p>
+
+                <input type="radio" id="credit_card" name="payment_method" value="credit_card" checked>
+                <label for="credit_card">Credit / Debit Card</label><br><br>
+
+                <input type="radio" id="paypal" name="payment_method" value="paypal">
+                <label for="paypal">PayPal</label><br><br>
+
+                <input type="radio" id="bank_transfer" name="payment_method" value="bank_transfer">
+                <label for="bank_transfer">Bank Transfer</label><br><br>
+
+                <input type="radio" id="telebirr" name="payment_method" value="telebirr">
+                <label for="telebirr">Telebirr / Mobile Money</label><br><br>
+
+                <hr><br>
+
+                <!-- Card Info Input Fields -->
+                <label for="card_number">Card Number:</label><br>
+                <input type="text" id="card_number" name="card_number" placeholder="1234 5678 9101 1121"><br><br>
+
+                <label for="exp_date">Expiry Date:</label><br>
+                <input type="month" id="exp_date" name="exp_date"><br><br>
+
+                <label for="cvv">CVV / Security Code:</label><br>
+                <input type="password" id="cvv" name="cvv" maxlength="4" size="4" placeholder="123"><br><br>
+            </fieldset>
+
+            <br>
+
+            <!-- 4. Terms and Confirmation -->
+            <fieldset>
+                <legend><strong>4. Terms & Confirmation</strong></legend>
+                <br>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the Terms of Service and Enrollment Conditions.</label>
+                <br><br>
+            </fieldset>
+
+            <br>
+
+            <!-- Submit & Reset Buttons -->
+            <button type="submit">Complete Enrollment</button>
+            <button type="reset">Clear Form</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <br><hr>
+        <p>&copy; 2026 Interactive Online Learning. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
